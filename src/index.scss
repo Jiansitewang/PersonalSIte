@@ -1,0 +1,19 @@
+//Reset
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &::after{
+    box-sizing: border-box;
+  }
+  &::before{
+    box-sizing: border-box;
+  }
+}
+a{text-decoration: none}
+h1,h2,h3,h4{font-weight: normal;}
+ul,ol{list-style: none;}
+
+
+//Background img
+#app{}

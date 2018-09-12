@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:v-show="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -11,43 +11,94 @@
 
 <body>
   <div id="app">
-    <nav class="hideTopNav">
-      <ol>
-        <li>Profile</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
-      </ol>
-    </nav>
-    <main>
-      <div class="hello">
-        <span>Hi,I'm</span>
-        <h1>王凯</h1>
-        <h2>前端工程师</h2>
-        <a href="" class="resumeDownload"></a>
-      </div>
-      <div class="menu">
-        <div>
-          <h2>01</h2>
-          <h2>PROFILE</h2>
+    <div class="blackCover"></div>
+    <div v-show="backVisible" class="backWrapper">
+      <nav class="hideTopNav">
+        <ul class="topNav">
+          <li>Profile</li>
+          <li>Portfolio</li>
+          <li>Contact</li>
+        </ul>
+        <a @click.prevent="backVisible = true;frontVisible = false" href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-cancel-1-copy"></use>
+          </svg>
+        </a>
+
+      </nav>
+      <main class="page">
+        <section class="info">
+          <h2>Information</h2>
+          <dl>
+            <dt>姓名</dt>
+            <dd>王凯</dd>
+            <dt>性别</dt>
+            <dd>男</dd>
+            <dt>邮箱</dt>
+            <dd>clay1wang@gmail.com</dd>
+            <dt>微信</dt>
+            <dd>wrxjxtdxs</dd>
+            <dt>目标职位</dt>
+            <dd>前端工程师</dd>
+            <dt>QQ</dt>
+            <dd>1475159073</dd>
+          </dl>
+        </section>
+        <section class="skills">
+          <h2>SKILLS</h2>
+          <dl>
+            <dt>小程序制作</dt>
+            <dd>可以独立进行小程序开发，熟悉AAAA、BBB、CCCC相关API或组件的使用</dd>
+            <dt>Vue</dt>
+            <dd>熟悉 Vue 常用功能，如组件、Vue-Router、双向绑定等</dd>
+            <dt>jQuery</dt>
+            <dd>熟悉 jQuery 的常用 API，能使用 jQuery 制作网站、轮播、Tab 组件等</dd>
+            <dt>HTML5&CSS3</dt>
+            <dd>能独立制作精美网页，掌握 CSS 3 动画、过渡效果、响应式等常用技术</dd>
+            <dt>移动端页面</dt>
+            <dd>会使用 REM、vw/vh、FastClick 等技术制作适配手机设备的页面</dd>
+            <dt>前端框架</dt>
+            <dd>理解 MVC、MVVM 等思想，可以熟练使用相关的库，如 Vue、React</dd>
+          </dl>
+        </section>
+      </main>
+    </div>
+    <div class="frontWrapper">
+      <main v-show="frontVisible">
+        <div class="hello">
+          <span>Hi,I'm</span>
+          <h1>王凯</h1>
+          <h2>前端工程师</h2>
+          <a href="" class="resumeDownload"></a>
         </div>
-        <div>
-          <h2>02</h2>
-          <h2>PORTFOLIO</h2>
+        <div class="menu">
+          <div>
+            <h2>01</h2>
+            <h2>
+              <a @click.prevent="backVisible = true;frontVisible = false" href="">PROFILE</a>
+            </h2>
+          </div>
+          <div >
+            <h2>02</h2>
+            <h2>PORTFOLIO</h2>
+          </div>
+          <div>
+            <h2>03</h2>
+            <h2>BLOG</h2>
+          </div>
+          <div>
+            <h2>04</h2>
+            <h2>CONTACT</h2>
+          </div>
         </div>
-        <div>
-          <h2>03</h2>
-          <h2>BLOG</h2>
-        </div>
-        <div>
-          <h2>04</h2>
-          <h2>CONTACT</h2>
-        </div>
-      </div>
-      <div class="rightSidebar"></div>
-    </main>
+        <div class="rightSidebar"></div>
+      </main>
+    </div>
 
   </div>
-<script src="../vendors/vue.js"></script>
-<script src="app.js"></script>
+
+  <script src="//at.alicdn.com/t/font_834927_nfgit2ger1n.js"></script>
+  <script src="../vendors/vue.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

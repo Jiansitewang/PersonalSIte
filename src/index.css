@@ -13,7 +13,74 @@ a {
 h1, h2, h3, h4 {
   font-weight: normal; }
 
-ul, ol {
+ul, li, ol {
   list-style: none; }
+
+#app {
+  color: white; }
+
+.blackCover {
+  position: relative;
+  background: url("../img/rawpixel-1054553-unsplash.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh; }
+  .blackCover::before {
+    position: absolute;
+    content: '';
+    background: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%; }
+
+.backWrapper {
+  display: flex;
+  justify-content: flex-end;
+  height: 100vh;
+  width: 70%; }
+
+.frontWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%; }
+
+.hideTopNav {
+  position: relative;
+  right: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 69%;
+  height: 40px;
+  background: #F1F3F6; }
+  .hideTopNav > ul {
+    display: inherit;
+    margin: 0 3em 0 0; }
+    .hideTopNav > ul > li {
+      padding: 0 15px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #666; }
+  .hideTopNav > svg {
+    margin: 0 2em 0 0;
+    fill: green; }
+    .hideTopNav > svg > rect.btn {
+      stroke: #fff;
+      fill: #fff;
+      fill-opacity: 0;
+      stroke-opacity: 0; }
+
+.backWrapper > .page {
+  position: absolute;
+  height: 100vh;
+  width: 70%; }
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden; }
 
 /*# sourceMappingURL=index.css.map */

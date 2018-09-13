@@ -8,7 +8,8 @@
     box-sizing: border-box; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 h1, h2, h3, h4 {
   font-weight: normal; }
@@ -16,6 +17,117 @@ h1, h2, h3, h4 {
 ul, li, ol {
   list-style: none; }
 
+@media (max-width: 1919px) and (min-width: 1280px) {
+  .frontWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%; }
+    .frontWrapper > main {
+      position: relative; }
+      .frontWrapper > main > .helloBlock {
+        position: absolute;
+        left: -190px;
+        top: 10px;
+        width: 700px;
+        height: 700px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        transform: rotate(-34deg); }
+        .frontWrapper > main > .helloBlock > div {
+          position: absolute;
+          left: 240px;
+          top: 243px;
+          line-height: 1;
+          display: flex;
+          flex-direction: column;
+          transform: rotate(34deg); }
+          .frontWrapper > main > .helloBlock > div > span {
+            text-align: left;
+            width: 100%;
+            font-size: 26px;
+            font-weight: 300;
+            margin: 0 0 25px 0;
+            letter-spacing: 4px; }
+          .frontWrapper > main > .helloBlock > div > h1 {
+            text-align: left;
+            width: 100%;
+            font-weight: 700;
+            font-size: 50px;
+            margin: 0 0 24px 0;
+            letter-spacing: 4px; }
+          .frontWrapper > main > .helloBlock > div > h2 {
+            text-align: left;
+            width: 100%;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 20px; }
+          .frontWrapper > main > .helloBlock > div > .resumeDownload {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            width: 250px;
+            height: 48px;
+            margin: 34px 0 0 0;
+            border: 1px solid transparent;
+            background: #333333;
+            border-radius: 1px; }
+            .frontWrapper > main > .helloBlock > div > .resumeDownload::after {
+              content: 'DOWNLOAD RESUME';
+              position: absolute;
+              width: 100%;
+              color: white;
+              text-align: center;
+              font-size: 13px;
+              letter-spacing: 2px;
+              font-weight: 600;
+              left: -20px; }
+            .frontWrapper > main > .helloBlock > div > .resumeDownload > svg {
+              width: 32px;
+              height: 32px;
+              margin: 0 10px 0 0; }
+          .frontWrapper > main > .helloBlock > div > .media {
+            display: flex;
+            margin: 84px 0 0 0; }
+            .frontWrapper > main > .helloBlock > div > .media > a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 35px;
+              height: 35px;
+              border: 1px solid white; }
+              .frontWrapper > main > .helloBlock > div > .media > a > svg {
+                width: 12px;
+                height: 12px; }
+      .frontWrapper > main > .menuBlock {
+        position: relative; }
+        .frontWrapper > main > .menuBlock > div {
+          position: absolute;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          width: 430px;
+          height: 400px;
+          border: 1px solid rgba(255, 255, 255, 0.4); }
+        .frontWrapper > main > .menuBlock > .profile {
+          height: 300px;
+          left: 382px;
+          top: -151px;
+          transform: rotate(-34deg); }
+        .frontWrapper > main > .menuBlock > .portfolio {
+          left: 577px;
+          top: 89px;
+          transform: rotate(-34deg); }
+        .frontWrapper > main > .menuBlock > .blog {
+          height: 300px;
+          left: 772px;
+          top: 428px;
+          transform: rotate(-34deg); }
+        .frontWrapper > main > .menuBlock > .contact {
+          left: 1067px;
+          top: 48px;
+          transform: rotate(-34deg); } }
 #app {
   color: white; }
 
@@ -37,13 +149,6 @@ ul, li, ol {
   justify-content: flex-end;
   height: 100vh;
   width: 70%; }
-
-.frontWrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%; }
 
 .hideTopNav {
   position: relative;

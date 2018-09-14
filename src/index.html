@@ -6,13 +6,80 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="../node_modules/normalize.css">
+  <link rel="stylesheet" href="CSS/media-1280-1919.css">
+  <link rel="stylesheet" href="CSS/reset.css">
+
 </head>
 
 <body>
   <div id="app">
     <div class="blackCover"></div>
-    <div v-show="backVisible" class="backWrapper">
+    <div class="frontWrapper">
+    <main v-show="frontVisible">
+      <div class="helloBlock">
+        <div>
+          <span>Hi,I'm</span>
+          <h1>WaK王凯</h1>
+          <h2>前端工程师</h2>
+          <a href="" class="resumeDownload">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-xiazai"></use>
+            </svg>
+          </a>
+          <div class="media">
+            <a href="">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-youxiang"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-github51"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-zhihu"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-weibo1"></use>
+              </svg>
+            </a>
+
+
+          </div>
+
+        </div>
+      </div>
+      <div class="menuBlock">
+        <div class="profile">
+          <h2>
+            <a @click.prevent="backVisible = true;frontVisible = false" href="">PROFILE</a>
+          </h2>
+        </div>
+        <div class="portfolio">
+          <h2>
+            <a @click.prevent="backVisible = true;frontVisible = false" href="">PORTFOLIO</a>
+          </h2>
+        </div>
+        <div class="blog">
+          <h2>
+            <a @click.prevent="backVisible = true;frontVisible = false" href="">BLOG</a>
+          </h2>
+        </div>
+        <div class="contact">
+          <h2>
+            <a @click.prevent="backVisible = true;frontVisible = false" href="">CONTACT</a>
+          </h2>
+        </div>
+      </div>
+    </main>
+  </div>
+    <div class="backWrapper" v-show="backVisible" >
       <nav class="hideTopNav">
         <ul class="topNav">
           <li>Profile</li>
@@ -63,69 +130,7 @@
         </section>
       </main>
     </div>
-    <div class="frontWrapper">
-      <main v-show="frontVisible">
-        <div class="helloBlock">
-          <div>
-            <span>Hi,I'm</span>
-            <h1>WaK王凯</h1>
-            <h2>前端工程师</h2>
-            <a href="" class="resumeDownload">
-              <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-xiazai"></use>
-              </svg>
-            </a>
-            <div class="media">
-              <a href="">
-                <svg class="icon" aria-hidden="true">
-                  <use xlink:href="#icon-youxiang"></use>
-                </svg>
-              </a>
-              <a href="">
-                <svg class="icon" aria-hidden="true">
-                  <use xlink:href="#icon-github51"></use>
-                </svg>
-              </a>
-              <a href="">
-                <svg class="icon" aria-hidden="true">
-                  <use xlink:href="#icon-zhihu"></use>
-                </svg>
-              </a>
-              <a href="">
-                <svg class="icon" aria-hidden="true">
-                  <use xlink:href="#icon-weibo1"></use>
-                </svg>
-              </a>
 
-
-            </div>
-
-          </div>
-        </div>
-        <div class="menuBlock">
-          <div class="profile">
-            <h2>
-              <a @click.prevent="backVisible = true;frontVisible = false" href="">PROFILE</a>
-            </h2>
-          </div>
-          <div class="portfolio">
-            <h2>
-              <a @click.prevent="backVisible = true;frontVisible = false" href="">PORTFOLIO</a>
-            </h2>
-          </div>
-          <div class="blog">
-            <h2>
-              <a @click.prevent="backVisible = true;frontVisible = false" href="">BLOG</a>
-            </h2>
-          </div>
-          <div class="contact">
-            <h2>
-              <a @click.prevent="backVisible = true;frontVisible = false" href="">CONTACT</a>
-            </h2>
-          </div>
-        </div>
-      </main>
-    </div>
 
   </div>
 

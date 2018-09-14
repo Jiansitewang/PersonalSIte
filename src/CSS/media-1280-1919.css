@@ -67,7 +67,8 @@
             .frontWrapper > main > .helloBlock > div > .resumeDownload > svg {
               width: 32px;
               height: 32px;
-              margin: 0 10px 0 0; }
+              margin: 0 10px 0 0;
+              fill: white; }
           .frontWrapper > main > .helloBlock > div > .media {
             display: flex;
             margin: 84px 0 0 0; }
@@ -80,7 +81,8 @@
               border: 1px solid white; }
               .frontWrapper > main > .helloBlock > div > .media > a > svg {
                 width: 12px;
-                height: 12px; }
+                height: 12px;
+                fill: white; }
       .frontWrapper > main > .menuBlock {
         position: relative; }
         .frontWrapper > main > .menuBlock > div {

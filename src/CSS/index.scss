@@ -1,16 +1,13 @@
 body {
-  //font: 400 14px 'Poppins', sans-serif;
 }
 #app{
   color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 
 ///////////////
-
-
-///////////////
-.blackCover{
+.darkBG{
   position: relative;
   background: url("../../img/rawpixel-1054553-unsplash.jpg") no-repeat ;
   background-size: cover;
@@ -24,6 +21,67 @@ body {
     height: 100%;
   }
 }
+///////////////
+.frontWrapper{}
+.menuBlock{
+  > div > h2{
+    width: inherit;
+    height: inherit;
+    font-size: 27px;
+    font-weight: 600;
+    transform: rotate(34deg);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    > a {
+      position: relative;
+      margin: 50px;
+
+      letter-spacing: 2px;
+      &::before{
+        content: '02';
+        position: absolute;
+        font-size: 14px;
+        left: -23px;
+        top: -30px;
+      }
+      &::after{
+        content: '';
+        position: absolute;
+        background: white;
+        width: 70px;
+        height: 1px;
+        top: -3px;
+        left: -22px;
+      }
+    }
+  }
+  > .contact > h2{
+    > a {
+      &::before{
+        content: '04';
+      }
+    }
+  }
+  > .blog > h2{
+    padding-left: 50px;
+    > a {
+      &::before{
+        content: '03';
+      }
+    }
+  }
+  > .profile > h2{
+    padding: 150px 0 0 70px;
+    > a {
+      &::before{
+        content: '01';
+      }
+    }
+  }
+}
+
+
 
 ///////////////
 

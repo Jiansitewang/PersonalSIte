@@ -1,4 +1,4 @@
-@media (max-width: 1919px) and (min-width: 1280px){
+@media (max-width: 979px) and (min-width: 800px){
   .frontWrapper{
     position: absolute;
     top: 0;
@@ -11,7 +11,7 @@
       > .helloBlock {
         position: absolute;
         left: -190px;
-        top: 10px;
+        top: -10px;
         width: 700px;
         height: 700px;
         border: 1px solid rgba(255, 255, 255, 0.4);
@@ -113,24 +113,25 @@
         }
         > .profile {
           height: 300px;
-          left: 382px;
+          left: 396px;
           top: -151px;
           transform: rotate(-34deg);
         }
         > .portfolio {
-          left: 577px;
+          left: 591px;
           top: 89px;
           transform: rotate(-34deg);
         }
         > .blog {
           height: 300px;
-          left: 772px;
-          top: 428px;
+          left: 336px;
+          top: 529px;
           transform: rotate(-34deg);
         }
         > .contact {
-          left: 1067px;
-          top: 48px;
+          display: none;
+          left: 9px;
+          top: 760px;
           transform: rotate(-34deg);
         }
       }

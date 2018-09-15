@@ -1,17 +1,21 @@
 <!doctype html>
-<html lang="en" xmlns:v-show="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Documen</title>
-  <link rel="stylesheet" href="CSS/index.css">
-  <link rel="stylesheet" href="../node_modules/normalize.css">
-  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="../src/css/index.css">
+  <link rel="stylesheet" href="../vendors/normalize.css">
+  <link rel="stylesheet" href="../src/css/reset.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-  <link rel="stylesheet" href="CSS/media-1280-1919.css">
-
+  <link rel="stylesheet" href="../src/css/media-1280-1919.css">
+  <link rel="stylesheet" href="../src/css/media-1025-1280.css">
+  <link rel="stylesheet" href="css/media-980-1024.css">
+  <link rel="stylesheet" href="css/media-800-980.css">
+  <link rel="stylesheet" href="css/media-768-800.css">
+  <link rel="stylesheet" href="css/media-540-767.css">
 </head>
 
 <body>
@@ -47,7 +51,7 @@
             </a>
             <a href="">
               <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-weibo1"></use>
+                <use xlink:href="#icon-weibo"></use>
               </svg>
             </a>
 
@@ -60,7 +64,9 @@
         <div class="profile">
           <h2>
             <a @click.prevent="backVisible = true;frontVisible = false" href="">PROFILE</a>
+            <div class="test"></div>
           </h2>
+
         </div>
         <div class="portfolio">
           <h2>

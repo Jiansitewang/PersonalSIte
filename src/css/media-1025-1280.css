@@ -1,4 +1,4 @@
-@media (max-width: 1919px) and (min-width: 1280px) {
+@media (max-width: 1279px) and (min-width: 1025px) {
   .frontWrapper {
     position: absolute;
     top: 0;
@@ -10,8 +10,8 @@
       position: relative; }
       .frontWrapper > main > .helloBlock {
         position: absolute;
-        left: -190px;
-        top: 10px;
+        left: -200px;
+        top: -80px;
         width: 700px;
         height: 700px;
         border: 1px solid rgba(255, 255, 255, 0.4);
@@ -91,29 +91,27 @@
           display: flex;
           justify-content: flex-start;
           align-items: center;
-          width: 430px;
-          height: 400px;
+          width: 350px;
+          height: 300px;
           border: 1px solid rgba(255, 255, 255, 0.4); }
           .frontWrapper > main > .menuBlock > div:hover {
             border: 15px solid rgba(255, 255, 255, 0.1);
             background: rgba(0, 0, 0, 0.1); }
         .frontWrapper > main > .menuBlock > .profile {
-          height: 300px;
-          left: 382px;
-          top: -151px;
+          left: 419px;
+          top: -160px;
           transform: rotate(-34deg); }
         .frontWrapper > main > .menuBlock > .portfolio {
-          left: 577px;
-          top: 89px;
+          left: 586px;
+          top: 88px;
           transform: rotate(-34deg); }
         .frontWrapper > main > .menuBlock > .blog {
-          height: 300px;
-          left: 772px;
-          top: 428px;
+          left: 753px;
+          top: 335px;
           transform: rotate(-34deg); }
         .frontWrapper > main > .menuBlock > .contact {
-          left: 1067px;
-          top: 48px;
+          left: 950px;
+          top: 2px;
           transform: rotate(-34deg); } }
 
-/*# sourceMappingURL=media-1280-1919.css.map */
+/*# sourceMappingURL=media-1025-1280.css.map */

@@ -8,10 +8,11 @@ body {
 
 ///////////////
 .darkBG{
-  position: relative;
+  position: fixed;
   background: url("../../img/rawpixel-1054553-unsplash.jpg") no-repeat ;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   &::before{
     position: absolute;
     content: '';
@@ -22,37 +23,38 @@ body {
   }
 }
 ///////////////
-.frontWrapper{}
 .menuBlock{
-  > div > h2{
-    width: inherit;
-    height: inherit;
-    font-size: 27px;
-    font-weight: 600;
-    transform: rotate(34deg);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    > a {
-      position: relative;
-      margin: 50px;
-
-      letter-spacing: 2px;
-      &::before{
-        content: '02';
-        position: absolute;
-        font-size: 14px;
-        left: -23px;
-        top: -30px;
-      }
-      &::after{
-        content: '';
-        position: absolute;
-        background: white;
-        width: 70px;
-        height: 1px;
-        top: -3px;
-        left: -22px;
+  > div {
+    transition: all 0.5s;
+    > h2{
+      width: inherit;
+      height: inherit;
+      font-size: 27px;
+      font-weight: 600;
+      transform: rotate(34deg);
+      display: flex;
+      //justify-content: flex-start;
+      //align-items: center;
+      > a {
+        position: relative;
+        margin: 50px;
+        letter-spacing: 2px;
+        &::before{
+          content: '02';
+          position: absolute;
+          font-size: 14px;
+          left: -23px;
+          top: -30px;
+        }
+        &::after{
+          content: '';
+          position: absolute;
+          background: white;
+          width: 70px;
+          height: 1px;
+          top: -3px;
+          left: -22px;
+        }
       }
     }
   }

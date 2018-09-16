@@ -19,11 +19,11 @@
 </head>
 
 <body>
-  <div id="app">
-    <div class="darkBG"></div>
-    <div class="frontWrapper">
-    <main v-show="frontVisible">
-      <div class="helloBlock">
+<div id="app">
+  <div class="darkBG"></div>
+  <div class="frontWrapper">
+    <main>
+      <div class="helloBlock" :class="{active:isActive}">
         <div>
           <span>Hi,I'm</span>
           <h1>WaK王凯</h1>
@@ -54,93 +54,142 @@
                 <use xlink:href="#icon-weibo"></use>
               </svg>
             </a>
-
-
           </div>
 
         </div>
       </div>
-      <div class="menuBlock">
+      <div class="menuBlock" v-show="menuVisible">
         <div class="profile">
           <h2>
-            <a @click.prevent="backVisible = true;frontVisible = false" href="">PROFILE</a>
+            <a @click.prevent="backVisible = true;menuVisible = false;isActive = true" href="">PROFILE</a>
             <div class="test"></div>
           </h2>
 
         </div>
         <div class="portfolio">
           <h2>
-            <a @click.prevent="backVisible = true;frontVisible = false" href="">PORTFOLIO</a>
+            <a @click.prevent="backVisible = true;menuVisible = false" href="">PORTFOLIO</a>
           </h2>
         </div>
         <div class="blog">
           <h2>
-            <a @click.prevent="backVisible = true;frontVisible = false" href="">BLOG</a>
+            <a @click.prevent="backVisible = true;menuVisible = false" href="">BLOG</a>
           </h2>
         </div>
         <div class="contact">
           <h2>
-            <a @click.prevent="backVisible = true;frontVisible = false" href="">CONTACT</a>
+            <a @click.prevent="backVisible = true;menuVisible = false" href="">CONTACT</a>
           </h2>
         </div>
       </div>
     </main>
   </div>
-    <div class="backWrapper" v-show="backVisible" >
-      <nav class="hideTopNav">
-        <ul class="topNav">
-          <li>Profile</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
-        </ul>
-        <a @click.prevent="backVisible = true;frontVisible = false" href="#">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-cancel-1-copy"></use>
-          </svg>
-        </a>
-
-      </nav>
-      <main class="page">
-        <section class="info">
-          <h2>Information</h2>
-          <dl>
-            <dt>姓名</dt>
-            <dd>王凯</dd>
-            <dt>性别</dt>
-            <dd>男</dd>
-            <dt>邮箱</dt>
-            <dd>clay1wang@gmail.com</dd>
-            <dt>微信</dt>
-            <dd>wrxjxtdxs</dd>
-            <dt>目标职位</dt>
-            <dd>前端工程师</dd>
-            <dt>QQ</dt>
-            <dd>1475159073</dd>
-          </dl>
-        </section>
-        <section class="skills">
-          <h2>SKILLS</h2>
-          <dl>
-            <dt>小程序制作</dt>
-            <dd>可以独立进行小程序开发，熟悉AAAA、BBB、CCCC相关API或组件的使用</dd>
-            <dt>Vue</dt>
-            <dd>熟悉 Vue 常用功能，如组件、Vue-Router、双向绑定等</dd>
-            <dt>jQuery</dt>
-            <dd>熟悉 jQuery 的常用 API，能使用 jQuery 制作网站、轮播、Tab 组件等</dd>
-            <dt>HTML5&CSS3</dt>
-            <dd>能独立制作精美网页，掌握 CSS 3 动画、过渡效果、响应式等常用技术</dd>
-            <dt>移动端页面</dt>
-            <dd>会使用 REM、vw/vh、FastClick 等技术制作适配手机设备的页面</dd>
-            <dt>前端框架</dt>
-            <dd>理解 MVC、MVVM 等思想，可以熟练使用相关的库，如 Vue、React</dd>
-          </dl>
-        </section>
-      </main>
-    </div>
+  <div class="backWrapper" v-show="backVisible">
+    <nav class="hideTopNav">
+      <ul class="topNav">
+        <li>Profile</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+      </ul>
+      <a @click.prevent="backVisible = false;menuVisible = true;isActive = false" href="#">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-cancel-1-copy"></use>
+        </svg>
+      </a>
+    </nav>
+    <main class="page">
+      <section class="info">
+        <h2>Information</h2>
+        <dl>
+          <dt>姓名:</dt>
+          <dd>王凯</dd>
+          <dt>目标职位:</dt>
+          <dd>前端工程师</dd>
+          <dt>性别:</dt>
+          <dd>男</dd>
+          <dt>邮箱:</dt>
+          <dd>clay1wang@gmail.com</dd>
+          <dt>微信:</dt>
+          <dd>wrxjxtdxs</dd>
+          <dt>QQ:</dt>
+          <dd>1475159073</dd>
+        </dl>
+      </section>
+      <section data-x id="siteSkills" class="skill">
+        <h2>SKILLS</h2>
+        <ol class="clearfix">
+          <li>
+            <h3>
+              HTML 5 &amp; CSS 3
+            </h3>
+            <div class="progressBar">
+              <div class="progress" style="width: 10%;"></div>
+            </div>
+          </li>
+          <li>
+            <h3>
+              JavaScript
+            </h3>
+            <div class="progressBar">
+              <div class="progress" style="width: 20%"></div>
+            </div>
+          </li>
+          <li>
+            <h3>
+              jQuery
+            </h3>
+            <div class="progressBar">
+              <div class="progress" style="width: 30%"></div>
+            </div>
+          </li>
+          <li>
+            <h3>
+              Vue.js
+            </h3>
+            <div class="progressBar">
+              <div class="progress" style="width: 40%"></div>
+            </div>
+          </li>
+          <li>
+            <h3>
+              React.js
+            </h3>
+            <div class="progressBar">
+              <div class="progress"  style="width: 50%"></div>
+            </div>
+          </li>
+          <li>
+            <h3>
+              Node.js
+            </h3>
+            <div class="progressBar">
+              <div class="progress"  style="width: 60%"></div>
+            </div>
+          </li>
+        </ol>
+      </section>
+      <section class="skills">
+        <dl>
+          <dt>小程序制作</dt>
+          <dd>可以独立进行小程序开发，熟悉AAAA、BBB、CCCC相关API或组件的使用</dd>
+          <dt>Vue</dt>
+          <dd>熟悉 Vue 常用功能，如组件、Vue-Router、双向绑定等</dd>
+          <dt>jQuery</dt>
+          <dd>熟悉 jQuery 的常用 API，能使用 jQuery 制作网站、轮播、Tab 组件等</dd>
+          <dt>HTML5&CSS3</dt>
+          <dd>能独立制作精美网页，掌握 CSS 3 动画、过渡效果、响应式等常用技术</dd>
+          <dt>移动端页面</dt>
+          <dd>会使用 REM、vw/vh、FastClick 等技术制作适配手机设备的页面</dd>
+          <dt>前端框架</dt>
+          <dd>理解 MVC、MVVM 等思想，可以熟练使用相关的库，如 Vue、React</dd>
+        </dl>
+      </section>
+    </main>
   </div>
+</div>
 
-  <script src="//at.alicdn.com/t/font_834927_tyb31x8tsxj.js"></script>
-  <script src="../vendors/vue.js"></script>
-  <script src="app.js"></script>
+<script src="//at.alicdn.com/t/font_834927_tyb31x8tsxj.js"></script>
+<script src="../vendors/vue.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

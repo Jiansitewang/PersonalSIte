@@ -1,10 +1,13 @@
 var app = new Vue({
   el: '#app',
   data: {
-    frontVisible: true,
-    backVisible:false
+    menuVisible: true,
+    backVisible:false,
+    isActive:false
   },
+
   method:{
 
   }
 })
+console.log(app.data.isActive)

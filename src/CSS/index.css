@@ -24,7 +24,9 @@
     font-size: 27px;
     font-weight: 600;
     transform: rotate(34deg);
-    display: flex; }
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
     .menuBlock > div > h2 > a {
       position: relative;
       margin: 50px;
@@ -34,7 +36,8 @@
         position: absolute;
         font-size: 14px;
         left: -23px;
-        top: -30px; }
+        top: -30px;
+        transition: 0.5s ease-out; }
       .menuBlock > div > h2 > a::after {
         content: '';
         position: absolute;
@@ -54,43 +57,6 @@
   .menuBlock > .profile > h2 > a::before {
     content: '01'; }
 
-.backWrapper {
-  display: flex;
-  justify-content: flex-end;
-  height: 100vh;
-  width: 70%; }
-  .backWrapper > .page {
-    position: absolute;
-    height: 100vh;
-    width: 70%; }
-
-.hideTopNav {
-  position: relative;
-  right: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 69%;
-  height: 40px;
-  background: #F1F3F6; }
-  .hideTopNav > ul {
-    display: inherit;
-    margin: 0 3em 0 0; }
-    .hideTopNav > ul > li {
-      padding: 0 15px;
-      font-weight: 600;
-      cursor: pointer;
-      color: #666; }
-  .hideTopNav > svg {
-    margin: 0 2em 0 0;
-    fill: green; }
-    .hideTopNav > svg > rect.btn {
-      stroke: #fff;
-      fill: #fff;
-      fill-opacity: 0;
-      stroke-opacity: 0; }
-
-.backWrapper
 .icon {
   width: 1em;
   height: 1em;

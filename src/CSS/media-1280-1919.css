@@ -84,6 +84,20 @@
                 width: 12px;
                 height: 12px;
                 fill: white; }
+      .frontWrapper > main > .helloBlock.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: none;
+        height: 100vh;
+        width: 30%;
+        transform: rotate(0deg); }
+        .frontWrapper > main > .helloBlock.active > div {
+          position: unset;
+          transform: rotate(0deg); }
       .frontWrapper > main > .menuBlock {
         position: relative; }
         .frontWrapper > main > .menuBlock > div {
@@ -114,6 +128,119 @@
         .frontWrapper > main > .menuBlock > .contact {
           left: 1067px;
           top: 48px;
-          transform: rotate(-34deg); } }
+          transform: rotate(-34deg); }
+
+  .backWrapper {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 70%;
+    background: white;
+    color: black;
+    overflow: auto; }
+
+  .hideTopNav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 40px;
+    background: #F1F3F6;
+    position: sticky; }
+    .hideTopNav > ul {
+      display: inherit; }
+      .hideTopNav > ul > li {
+        padding: 0 15px;
+        font-weight: 600;
+        cursor: pointer;
+        color: #666; }
+    .hideTopNav > a > svg {
+      fill: #666666;
+      margin: 40px;
+      font-size: 14px; }
+
+  .page {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column; }
+    .page > section {
+      margin-left: 5%;
+      margin-right: 5%; }
+      .page > section > h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 15px;
+        margin-bottom: 30px; }
+    .page > section.info {
+      padding: 20px 0;
+      margin-bottom: 20px; }
+      .page > section.info > dl {
+        display: flex;
+        flex-wrap: wrap; }
+        .page > section.info > dl > dt {
+          border: 1px solid red;
+          width: 7%; }
+        .page > section.info > dl > dd {
+          border: 1px solid green;
+          width: 43%;
+          margin-left: auto; }
+    .page > section.skills {
+      padding: 20px 0;
+      margin-bottom: 20px; }
+      .page > section.skills > dl {
+        display: flex;
+        flex-wrap: wrap; }
+        .page > section.skills > dl > dt {
+          border: 1px solid red;
+          width: 10%; }
+        .page > section.skills > dl > dd {
+          border: 1px solid green;
+          width: 90%;
+          margin-left: auto; }
+    .page > section.skill > h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 600;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 15px;
+      margin-bottom: 30px; }
+    .page > section.skill > h3 {
+      font-size: 14px;
+      line-height: 1.1;
+      padding-right: 40px; }
+    .page > section.skill > ol {
+      height: 250px;
+      background: white;
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+      padding: 42px 50px 10px;
+      margin-top: 30px; }
+      .page > section.skill > ol > li {
+        float: left;
+        width: 48%;
+        box-sizing: border-box; }
+        .page > section.skill > ol > li:nth-child(even) {
+          float: right; }
+      .page > section.skill > ol .progressBar {
+        height: 2px;
+        background: #dddddd;
+        border-radius: 2px;
+        margin: 4px 0 40px;
+        overflow: hidden; }
+        .page > section.skill > ol .progressBar > .progress {
+          height: 100%;
+          background: #666666;
+          width: 70%;
+          border-radius: 2px;
+          transform: translateX(0);
+          transition: all 1s; }
+    .page > section.skill .offset .progress {
+      transform: translateX(-100%); } }
 
 /*# sourceMappingURL=media-1280-1919.css.map */

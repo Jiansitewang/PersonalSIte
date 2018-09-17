@@ -3,11 +3,11 @@ var app = new Vue({
   data: {
     menuVisible: true,
     backVisible:false,
-    isActive:false
+    isActive:false,
+    show:true
   },
 
   method:{
 
   }
 })
-console.log(app.data.isActive)

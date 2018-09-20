@@ -15,7 +15,8 @@
         width: 700px;
         height: 700px;
         border: 1px solid rgba(255, 255, 255, 0.4);
-        transform: rotate(-34deg); }
+        transform: rotate(-34deg);
+        transition: all 1s ease-out; }
         .frontWrapper > main > .helloBlock > div {
           position: absolute;
           left: 240px;
@@ -23,8 +24,7 @@
           line-height: 1;
           display: flex;
           flex-direction: column;
-          transform: rotate(34deg);
-          transition: all 0.7s ease-out; }
+          transform: rotate(34deg); }
           .frontWrapper > main > .helloBlock > div > span {
             text-align: left;
             width: 100%;
@@ -95,11 +95,11 @@
         border: none;
         height: 100vh;
         width: 30%;
-        transform: rotate(0deg); }
+        transform: rotate(0deg);
+        transition: all 1s ease-out; }
         .frontWrapper > main > .helloBlock.active > div {
           position: unset;
-          transform: rotate(0deg);
-          transition: all 0.7s ease-out; }
+          transform: rotate(0deg); }
       .frontWrapper > main > .menuBlock {
         position: relative; }
         .frontWrapper > main > .menuBlock > div {

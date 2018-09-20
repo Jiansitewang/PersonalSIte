@@ -176,10 +176,10 @@
   }
 
   .hello-enter {
-    opacity: 0;
+    transform: rotate(-34deg);
    }
   .hello-enter-active{
-    transition: opacity .8s;
+    transition: transform .8s;
   }
 
 

@@ -3,8 +3,8 @@ var app = new Vue({
   data: {
     menuVisible: true,
     backVisible:false,
+    helloVisible:true,
     isActive:false,
-    show:true
   },
 
   method:{

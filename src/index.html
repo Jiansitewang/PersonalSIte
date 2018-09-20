@@ -23,8 +23,8 @@
   <div class="darkBG"></div>
   <div class="frontWrapper">
     <main>
-      <transition name="fade">
-      <div class="helloBlock" v-if="show">
+      <transition name="hello">
+      <div class="helloBlock" v-show="helloVisible">
         <div>
           <span>Hi,I'm</span>
           <h1>WaK王凯</h1>
@@ -62,7 +62,7 @@
       <div class="menuBlock" v-show="menuVisible">
         <div class="profile">
           <h2>
-            <a @click.prevent="backVisible = true;menuVisible = false;isActive = !isActive" href="">PROFILE</a>
+            <a @click.prevent="backVisible = true;menuVisible = false" href="">PROFILE</a>
             <div class="test"></div>
           </h2>
         </div>
@@ -85,7 +85,7 @@
     </main>
   </div>
   <transition name="fade">
-    <div class="backWrapper" v-show="backVisible" v-if="isActive">
+    <div class="backWrapper" v-show="backVisible" >
       <nav class="hideTopNav">
         <ul class="topNav">
           <li>Profile</li>

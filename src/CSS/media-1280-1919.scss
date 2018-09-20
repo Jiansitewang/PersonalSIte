@@ -16,7 +16,7 @@
         height: 700px;
         border: 1px solid rgba(255, 255, 255, 0.4);
         transform: rotate(-34deg);
-        transition: all 1s ease-out;
+        transition: all .8s ease-out;
         > div {
           position: absolute;
           left: 240px;
@@ -108,7 +108,7 @@
         height: 100vh;
         width: 30%;
         transform: rotate(0deg);
-        transition: all 1s ease-out;
+        transition: all .8s ease-out;
         > div {
           position: unset;
           transform: rotate(0deg);
@@ -169,6 +169,32 @@
     color: black;
     overflow: auto;
   }
+  .portfolioWrapper {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 70%;
+    background: white;
+    color: black;
+    overflow: auto;
+  }
+  .conWrapper {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 70%;
+    background: white;
+    color: black;
+    overflow: auto;
+  }
   .fade-enter {
      opacity: 0;
    }
@@ -189,10 +215,14 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 100%;
+    width: 70%;
     height: 40px;
     background: #F1F3F6;
-    position: sticky;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    top: -40px;
+    transition: all .8s ease-out;
     > ul {
       display: inherit;
 
@@ -207,8 +237,10 @@
       fill: #666666;
       margin: 40px;
       font-size: 14px;
-
     }
+  }
+  .hideTopNav.active{
+    top: 0;
   }
   .page{
     display: flex;
@@ -230,6 +262,7 @@
     > section.info{
       padding: 20px 0;
       margin-bottom: 20px;
+      margin-top: 95px;
       > dl {
         display: flex;
         flex-wrap: wrap;

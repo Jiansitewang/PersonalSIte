@@ -23,8 +23,7 @@
   <div class="darkBG"></div>
   <div class="frontWrapper">
     <main>
-      <transition name="hello">
-      <div class="helloBlock" v-show="helloVisible">
+      <div class="helloBlock" :class="{active:isActive}">
         <div>
           <span>Hi,I'm</span>
           <h1>WaK王凯</h1>
@@ -58,11 +57,10 @@
           </div>
         </div>
       </div>
-      </transition>
       <div class="menuBlock" v-show="menuVisible">
         <div class="profile">
           <h2>
-            <a @click.prevent="backVisible = true;menuVisible = false" href="">PROFILE</a>
+            <a @click.prevent="backVisible = true;menuVisible = false;isActive = !isActive" href="">PROFILE</a>
             <div class="test"></div>
           </h2>
         </div>
@@ -92,7 +90,7 @@
           <li>Portfolio</li>
           <li>Contact</li>
         </ul>
-        <a @click.prevent="backVisible = false;menuVisible = true;isActive = false" href="#">
+        <a @click.prevent="backVisible = false;menuVisible = true;isActive = !isActive" href="#">
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-cancel-1-copy"></use>
           </svg>

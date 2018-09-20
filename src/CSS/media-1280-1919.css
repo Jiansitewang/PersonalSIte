@@ -23,7 +23,8 @@
           line-height: 1;
           display: flex;
           flex-direction: column;
-          transform: rotate(34deg); }
+          transform: rotate(34deg);
+          transition: all 0.7s ease-out; }
           .frontWrapper > main > .helloBlock > div > span {
             text-align: left;
             width: 100%;
@@ -98,7 +99,7 @@
         .frontWrapper > main > .helloBlock.active > div {
           position: unset;
           transform: rotate(0deg);
-          transition: opacity 0.7s ease-out; }
+          transition: all 0.7s ease-out; }
       .frontWrapper > main > .menuBlock {
         position: relative; }
         .frontWrapper > main > .menuBlock > div {
@@ -151,10 +152,11 @@
     transition: opacity .8s; }
 
   .hello-enter {
+    transform-origin: center;
     transform: rotate(-34deg); }
 
   .hello-enter-active {
-    transition: transform .8s; }
+    transition: all 1s; }
 
   .hideTopNav {
     display: flex;

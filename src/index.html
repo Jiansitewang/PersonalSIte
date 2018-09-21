@@ -5,7 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Documen</title>
+  <title>WaK|王凯</title>
   <link rel="stylesheet" href="../src/css/index.css">
   <link rel="stylesheet" href="../vendors/normalize.css">
   <link rel="stylesheet" href="../src/css/reset.css">
@@ -61,7 +61,6 @@
         <div class="profile">
           <h2>
             <a @click.prevent="profileVisible=true; menuVisible=false; isActive=!isActive" href="">PROFILE</a>
-            <div class="test"></div>
           </h2>
         </div>
         <div class="portfolio">
@@ -84,9 +83,9 @@
   </div>
   <nav class="hideTopNav" :class="{active:isActive}">
   <ul class="topNav">
-    <li>Profile</li>
-    <li>Portfolio</li>
-    <li>Contact</li>
+    <li @click="profileVisible=true; portfVisible=false; conVisible=false; menuVisible=false">Profile</li>
+    <li @click="profileVisible=false; portfVisible=true; conVisible=false; menuVisible=false">Portfolio</li>
+    <li @click="profileVisible=false; portfVisible=false; conVisible=true; menuVisible=false">Contact</li>
   </ul>
   <a @click.prevent="profileVisible=false; portfVisible=false; conVisible=false; menuVisible=true; isActive=!isActive" href="#">
     <svg class="icon" aria-hidden="true">
@@ -95,23 +94,35 @@
   </a>
 </nav>
   <transition name="fade">
-    <div class="backWrapper" v-show="profileVisible" >
+    <div class="profileWrapper" v-show="profileVisible" >
       <main class="page">
         <section class="info">
           <h2>Information</h2>
           <dl>
-            <dt>姓名:</dt>
-            <dd>王凯</dd>
-            <dt>目标职位:</dt>
-            <dd>前端工程师</dd>
-            <dt>性别:</dt>
-            <dd>男</dd>
-            <dt>邮箱:</dt>
-            <dd>clay1wang@gmail.com</dd>
-            <dt>微信:</dt>
-            <dd>wrxjxtdxs</dd>
-            <dt>QQ:</dt>
-            <dd>1475159073</dd>
+            <div>
+              <span class="span">姓名：</span>
+              王 凯
+            </div>
+             <div>
+              <span class="span">目标职位：</span>
+              前端工程师
+            </div>
+             <div>
+              <span class="span">性别：</span>
+              男
+            </div>
+             <div>
+              <span class="span">邮箱：</span>
+              clay1wang@gmail.com
+            </div>
+             <div>
+              <span class="span">微信：</span>
+              wrxjxtdxs
+            </div>
+             <div>
+              <span class="span">QQ：</span>
+              1475159073
+            </div>
           </dl>
         </section>
         <section data-x id="siteSkills" class="skill">
@@ -204,8 +215,6 @@
       </main>
     </div>
   </transition>
-
-
 
 </div>
 

@@ -16,47 +16,6 @@
     width: 100%;
     height: 100%; }
 
-.menuBlock > div {
-  transition: all 0.5s; }
-  .menuBlock > div > h2 {
-    width: inherit;
-    height: inherit;
-    font-size: 27px;
-    font-weight: 600;
-    transform: rotate(34deg);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; }
-    .menuBlock > div > h2 > a {
-      position: relative;
-      margin: 50px;
-      letter-spacing: 2px; }
-      .menuBlock > div > h2 > a::before {
-        content: '02';
-        position: absolute;
-        font-size: 14px;
-        left: -23px;
-        top: -30px;
-        transition: 0.5s ease-out; }
-      .menuBlock > div > h2 > a::after {
-        content: '';
-        position: absolute;
-        background: white;
-        width: 70px;
-        height: 1px;
-        top: -3px;
-        left: -22px; }
-.menuBlock > .contact > h2 > a::before {
-  content: '04'; }
-.menuBlock > .blog > h2 {
-  padding-left: 50px; }
-  .menuBlock > .blog > h2 > a::before {
-    content: '03'; }
-.menuBlock > .profile > h2 {
-  padding: 150px 0 0 70px; }
-  .menuBlock > .profile > h2 > a::before {
-    content: '01'; }
-
 .icon {
   width: 1em;
   height: 1em;

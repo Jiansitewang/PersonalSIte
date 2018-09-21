@@ -124,9 +124,42 @@
           width: 430px;
           height: 400px;
           border: 1px solid rgba(255, 255, 255, 0.4);
+          transition: all 0.5s;
           &:hover {
             border: 15px solid rgba(255, 255, 255, 0.1);
             background: rgba(0, 0, 0, 0.1);
+          }
+          > h2{
+            width: inherit;
+            height: inherit;
+            font-size: 27px;
+            font-weight: 600;
+            transform: rotate(34deg);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            > a {
+              position: relative;
+              margin: 50px;
+              letter-spacing: 2px;
+              &::before{
+                content: '02';
+                position: absolute;
+                font-size: 14px;
+                left: -23px;
+                top: -30px;
+                transition: 0.5s ease-out;
+              }
+              &::after{
+                content: '';
+                position: absolute;
+                background: white;
+                width: 70px;
+                height: 1px;
+                top: -3px;
+                left: -22px;
+              }
+            }
           }
         }
         > .profile {
@@ -134,6 +167,14 @@
           left: 382px;
           top: -151px;
           transform: rotate(-34deg);
+          > h2 {
+            padding: 150px 0 0 70px;
+            > a {
+              &::before{
+                content: '01';
+              }
+            }
+          }
         }
         > .portfolio {
           left: 577px;
@@ -145,44 +186,32 @@
           left: 772px;
           top: 428px;
           transform: rotate(-34deg);
+          > h2 {
+            padding-left: 50px;
+            > a {
+              &::before{
+                content: '03';
+              }
+            }
+          }
         }
         > .contact {
           left: 1067px;
           top: 48px;
           transform: rotate(-34deg);
+          > h2 {
+            > a {
+              &::before{
+                content: '04';
+              }
+            }
+          }
         }
       }
     }
   }
 
-  ///////////////
-  .backWrapper {
-    position: absolute;
-    right: 0;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    width: 70%;
-    background: white;
-    color: black;
-    overflow: auto;
-  }
-  .portfolioWrapper {
-    position: absolute;
-    right: 0;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    width: 70%;
-    background: white;
-    color: black;
-    overflow: auto;
-  }
-  .conWrapper {
+  .profileWrapper,.portfolioWrapper,.conWrapper {
     position: absolute;
     right: 0;
     display: flex;
@@ -207,9 +236,8 @@
     transform: rotate(-34deg);
    }
   .hello-enter-active{
-    transition: all 1s;
+    transition: all .8s;
   }
-
 
   .hideTopNav {
     display: flex;
@@ -231,6 +259,11 @@
         font-weight: 600;
         cursor: pointer;
         color: #666;
+        &:hover{
+          color: black;
+          font-weight: bold;
+          transition: all .5s;
+        }
       }
     }
     > a > svg {
@@ -257,6 +290,7 @@
         border-bottom: 1px solid #ddd;
         padding-bottom: 15px;
         margin-bottom: 30px;
+        letter-spacing: 2px;
       }
     }
     > section.info{
@@ -266,14 +300,18 @@
       > dl {
         display: flex;
         flex-wrap: wrap;
-        > dt {
-          border: 1px solid red;
-          width: 7%;
+        > div {
+          display: flex;
+          align-items: center;
+          width: 45%;
+          margin: 15px 0;
+          color: #727272;
+          > .span {
+            color: #333333;
+          }
         }
-        > dd {
-          border: 1px solid green;
-          width: 43%;
-          margin-left: auto;
+        &:nth-child(2),&:nth-child(4),&:nth-child(6) {
+          width: 65%;
         }
       }
     }
@@ -285,11 +323,11 @@
          flex-wrap: wrap;
          > dt {
            border: 1px solid red;
-           width: 10%;
+           width: 14%;
          }
          > dd {
            border: 1px solid green;
-           width: 90%;
+           width: 86%;
            margin-left: auto;
          }
        }

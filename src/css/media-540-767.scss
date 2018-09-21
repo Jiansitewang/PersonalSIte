@@ -4,7 +4,6 @@
     justify-content: center;
     height: 100vh;
     width: 100vw;
-
     > main {
       z-index: 1;
       display: flex;
@@ -26,7 +25,7 @@
             width: 100%;
             font-size: 26px;
             font-weight: 300;
-            margin: 0 0 25px 0;
+            margin: 0 0 10px 0;
             letter-spacing: 4px;
           }
           > h1 {
@@ -102,26 +101,35 @@
         > div {
           width: 80vw;
           display: flex;
-          margin: 52px 0 0 0;
+          margin: 45px 0 0 0;
           border-bottom: 1px solid rgba(255, 255, 255, 0.4);
           transition: all 0.5s;
           > h2 {
             transform: rotate(0deg);
             width: 100%;
             height: 100%;
-            margin: 0 0 33px 50px;
+            margin: 0 0 33px 45px;
             padding: 0;
             > a {
+              position: relative;
+              letter-spacing: 2px;
               margin: 0;
-              &:hover{
-                background: rgba(0, 0, 0, 0.4);
+              font-size: 20px;
+              font-weight: 600;
+              &::before{
+                content: '';
+                position: absolute;
+                font-size: 14px;
+                left: -23px;
+                top: -14px;
+                transition: 0.5s ease-out;
               }
+
             }
           }
         }
         > .profile {
           > h2 {
-            display: flex;
             > a {
               &::before{
                 content: '01';
@@ -129,11 +137,11 @@
             }
           }
         }
-        > .contact {
+        > .portfolio {
           > h2 {
             > a {
               &::before{
-                content: '04';
+                content: '02';
               }
             }
           }
@@ -143,6 +151,15 @@
             > a {
               &::before{
                 content: '03';
+              }
+            }
+          }
+        }
+        > .contact {
+          > h2 {
+            > a {
+              &::before{
+                content: '04';
               }
             }
           }

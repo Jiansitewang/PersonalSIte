@@ -4,23 +4,17 @@
     justify-content: center;
     align-items: flex-start;
     height: 100vh;
-    width: 100%;
-    max-width: 720px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    overflow: hidden; }
+    width: 100vw; }
     .frontWrapper > main {
       z-index: 1;
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       flex-direction: column;
       align-items: center; }
       .frontWrapper > main > .helloBlock {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        width: 90vw;
         margin-top: 30px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
         .frontWrapper > main > .helloBlock > div {
@@ -32,7 +26,7 @@
             width: 100%;
             font-size: 26px;
             font-weight: 300;
-            margin: 0 0 25px 0;
+            margin: 0 0 10px 0;
             letter-spacing: 4px; }
           .frontWrapper > main > .helloBlock > div > h1 {
             text-align: left;
@@ -40,7 +34,6 @@
             font-weight: 700;
             font-size: 50px;
             margin: 0 0 24px 0;
-            padding-right: 458px;
             letter-spacing: 4px; }
           .frontWrapper > main > .helloBlock > div > h2 {
             text-align: left;
@@ -75,8 +68,8 @@
               margin: 0 10px 0 0;
               fill: white; }
           .frontWrapper > main > .helloBlock > div > .media {
-            display: none;
-            margin: 84px 0 0 0; }
+            display: flex;
+            margin: 45px 0 40px 0; }
             .frontWrapper > main > .helloBlock > div > .media > a {
               display: flex;
               justify-content: center;
@@ -94,35 +87,46 @@
         flex-direction: column;
         align-items: flex-start; }
         .frontWrapper > main > .menuBlock > div {
+          width: 90vw;
           display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          margin: 52px 0 0 0;
-          padding-right: 529px;
+          margin: 45px 0 0 0;
           border-bottom: 1px solid rgba(255, 255, 255, 0.4);
           transition: all 0.5s; }
           .frontWrapper > main > .menuBlock > div > h2 {
             transform: rotate(0deg);
             width: 100%;
             height: 100%;
-            margin: 0 0 33px 50px;
+            margin: 0 0 33px 45px;
             padding: 0; }
             .frontWrapper > main > .menuBlock > div > h2 > a {
-              margin: 0; }
-              .frontWrapper > main > .menuBlock > div > h2 > a:hover {
-                background: rgba(0, 0, 0, 0.4); }
+              position: relative;
+              letter-spacing: 2px;
+              margin: 0;
+              font-size: 28px;
+              font-weight: 600; }
               .frontWrapper > main > .menuBlock > div > h2 > a::before {
-                content: '01'; }
-        .frontWrapper > main > .menuBlock > .portfolio {
-          padding-right: 481px; }
-        .frontWrapper > main > .menuBlock > .blog {
-          padding-right: 562px; }
-          .frontWrapper > main > .menuBlock > .blog > h2 > a::before {
-            content: '03'; }
-        .frontWrapper > main > .menuBlock > .contact {
-          padding-right: 500px; }
-          .frontWrapper > main > .menuBlock > .contact > h2 > a::before {
-            content: '04'; }
+                content: '';
+                position: absolute;
+                font-size: 14px;
+                left: -23px;
+                top: -30px;
+                transition: 0.5s ease-out; }
+              .frontWrapper > main > .menuBlock > div > h2 > a::after {
+                content: '';
+                position: absolute;
+                background: white;
+                width: 70px;
+                height: 1px;
+                top: -3px;
+                left: -22px; }
+        .frontWrapper > main > .menuBlock > .profile > h2 > a::before {
+          content: '01'; }
+        .frontWrapper > main > .menuBlock > .portfolio > h2 > a::before {
+          content: '02'; }
+        .frontWrapper > main > .menuBlock > .blog > h2 > a::before {
+          content: '03'; }
+        .frontWrapper > main > .menuBlock > .contact > h2 > a::before {
+          content: '04'; }
 
   .profileWrapper, .portfolioWrapper, .conWrapper {
     position: absolute;

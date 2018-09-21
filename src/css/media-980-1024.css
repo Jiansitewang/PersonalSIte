@@ -113,6 +113,12 @@
           .frontWrapper > main > .menuBlock > div:hover {
             border: 15px solid rgba(255, 255, 255, 0.1);
             background: rgba(0, 0, 0, 0.1); }
+            .frontWrapper > main > .menuBlock > div:hover > h2 > a::before {
+              top: -10px;
+              left: -40px; }
+            .frontWrapper > main > .menuBlock > div:hover > h2 > a::after {
+              top: 12px;
+              left: -40px; }
           .frontWrapper > main > .menuBlock > div > h2 {
             width: inherit;
             height: inherit;
@@ -140,7 +146,8 @@
                 width: 70px;
                 height: 1px;
                 top: -3px;
-                left: -22px; }
+                left: -22px;
+                transition: 0.5s ease-out; }
         .frontWrapper > main > .menuBlock > .profile {
           height: 300px;
           left: 396px;

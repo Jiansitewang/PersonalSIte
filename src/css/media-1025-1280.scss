@@ -127,6 +127,14 @@
           &:hover{
             border: 15px solid rgba(255, 255, 255, 0.1);
             background: rgba(0, 0, 0, 0.1);
+            > h2 > a::before{
+              top: -10px;
+              left:-40px;
+            }
+            > h2 > a::after{
+              top:12px;
+              left:-40px;
+            }
           }
           > h2{
             width: inherit;
@@ -157,6 +165,7 @@
                 height: 1px;
                 top: -3px;
                 left: -22px;
+                transition: 0.5s ease-out;
               }
             }
           }

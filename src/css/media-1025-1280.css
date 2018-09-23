@@ -3,15 +3,23 @@
     left: -200px;
     top: -80px; }
   .frontWrapper > main > .menuBlock > .profile {
+    width: 350px;
+    height: 300px;
     left: 419px;
     top: -160px; }
   .frontWrapper > main > .menuBlock > .portfolio {
+    width: 350px;
+    height: 300px;
     left: 586px;
     top: 88px; }
   .frontWrapper > main > .menuBlock > .blog {
+    width: 350px;
+    height: 300px;
     left: 753px;
     top: 335px; }
   .frontWrapper > main > .menuBlock > .contact {
+    width: 350px;
+    height: 300px;
     left: 950px;
     top: 2px; } }
 

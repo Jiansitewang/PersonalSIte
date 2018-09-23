@@ -4,45 +4,40 @@
     justify-content: center;
     align-items: flex-start;
     width: 100vw;
+    position: unset;
+    top: unset;
+    left: unset;
+    overflow: hidden;
     > main {
       z-index: 1;
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: center;
+      position: unset;
       > .helloBlock {
         display: flex;
         justify-content: flex-start;
         width: 90vw;
         margin-top: 30px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        position: unset;
+        left: unset;
+        top: unset;
+        height: unset;
+        transform: unset;
+        transition:unset;
         > div {
           line-height: 1;
           display: flex;
           flex-direction: column;
-          > span{
-            text-align: left;
-            width: 100%;
-            font-size: 26px;
-            font-weight: 300;
-            margin: 0 0 10px 0;
-            letter-spacing: 4px;
-          }
-          > h1 {
-            text-align: left;
-            width: 100%;
-            font-weight: 700;
-            font-size: 50px;
-            margin: 0 0 24px 0;
-            letter-spacing: 4px;
-          }
-          > h2 {
-            text-align: left;
-            width: 100%;
-            font-size: 26px;
-            font-weight: 700;
-            letter-spacing: 20px;
-          }
+          position: unset;
+          left: unset;
+          top: unset;
+          transform: unset;
           > .resumeDownload {
             display: flex;
             justify-content: flex-end;
@@ -74,9 +69,7 @@
           }
           > .media {
             display: flex;
-
             margin: 45px 0 40px 0;
-
             > a {
               display: flex;
               justify-content: center;
@@ -98,46 +91,63 @@
         justify-content: flex-start;
         flex-direction: column;
         align-items: flex-start;
+        position: unset;
         > div {
           width: 90vw;
           display: flex;
           margin: 45px 0 0 0;
           border-bottom: 1px solid rgba(255, 255, 255, 0.4);
           transition: all 0.5s;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          position: unset;
+          justify-content: unset;
+          align-items: unset;
+          height: unset;
+          &:hover{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            background: unset;
+            > h2 > a::before{
+              top: -23px;
+              left:-30px;
+            }
+            > h2 > a::after{
+              top:-3px;
+              left:-22px;
+            }
+          }
           > h2 {
             transform: rotate(0deg);
             width: 100%;
             height: 100%;
             margin: 0 0 33px 45px;
             padding: 0;
+
+            font-size: 27px;
+            font-weight: 600;
+            display: unset;
             > a {
-              position: relative;
-              letter-spacing: 2px;
               margin: 0;
               font-size: 28px;
               font-weight: 600;
               &::before{
                 content: '';
-                position: absolute;
-                font-size: 14px;
-                left: -23px;
-                top: -30px;
-                transition: 0.5s ease-out;
-              }
-              &::after{
-                content: '';
-                position: absolute;
-                background: white;
-                width: 70px;
-                height: 1px;
-                top: -3px;
-                left: -22px;
               }
             }
           }
         }
         > .profile {
+          height: 100%;
+          left: unset;
+          top: unset;
+          transform: unset;
           > h2 {
+            margin: 0 0 33px 45px;
+            padding: 0;
             > a {
               &::before{
                 content: '01';
@@ -146,6 +156,9 @@
           }
         }
         > .portfolio {
+          left: unset;
+          top: unset;
+          transform:unset;
           > h2 {
             > a {
               &::before{
@@ -155,7 +168,12 @@
           }
         }
         > .blog {
+          height: 100%;
+          left: unset;
+          top: unset;
+          transform: unset;
           > h2 {
+            padding: 0;
             > a {
               &::before{
                 content: '03';
@@ -164,6 +182,9 @@
           }
         }
         > .contact {
+          left: unset;
+          top: unset;
+          transform:unset;
           > h2 {
             > a {
               &::before{

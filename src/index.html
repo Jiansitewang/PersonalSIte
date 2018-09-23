@@ -6,7 +6,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>WaK|王凯</title>
-  <link rel="stylesheet" href="../src/css/index.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="../vendors/normalize.css">
   <link rel="stylesheet" href="../src/css/reset.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
@@ -83,7 +83,7 @@
   </div>
   <nav class="hideTopNav" :class="{active:isActive}">
   <ul class="topNav">
-    <li @click="profileVisible=true; portfVisible=false; conVisible=false; menuVisible=false">Profile</li>
+    <li @click="profileVisible=true; portfVisible=false; conVisible=false; menuVisible=false" :class="{active:isActive}">Profile</li>
     <li @click="profileVisible=false; portfVisible=true; conVisible=false; menuVisible=false">Portfolio</li>
     <li @click="profileVisible=false; portfVisible=false; conVisible=true; menuVisible=false">Contact</li>
   </ul>

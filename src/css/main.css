@@ -339,21 +339,50 @@
   .page section.portfolio {
     padding: 20px 0;
     margin-bottom: 20px;
-    margin-top: 95px; }
+    margin-top: 95px;
+    display: flex;
+    flex-direction: column; }
     .page section.portfolio > .filters {
-      display: flex; }
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 55px; }
+      .page section.portfolio > .filters > ol {
+        display: flex; }
+        .page section.portfolio > .filters > ol > li {
+          margin-right: 35px; }
+      .page section.portfolio > .filters > span {
+        margin-right: 25px; }
     .page section.portfolio > .works {
       border: 1px solid red;
       display: flex;
+      justify-content: flex-start;
+      align-items: center;
       flex-direction: column;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      height: 61vh; }
       .page section.portfolio > .works > li {
         border: 1px solid red;
         width: 30%; }
-      .page section.portfolio > .works:nth-child(3) {
-        background: red; }
-      .page section.portfolio > .works:nth-child(2) {
-        height: 40%; }
+        .page section.portfolio > .works > li:nth-child(1) {
+          height: 36vh;
+          margin-bottom: 4vh; }
+        .page section.portfolio > .works > li:nth-child(2) {
+          margin-left: 5%;
+          margin-right: 5%;
+          margin-bottom: 3vh;
+          height: 18vh; }
+        .page section.portfolio > .works > li:nth-child(3) {
+          margin-left: 5%;
+          margin-right: 5%;
+          margin-bottom: 3vh;
+          height: 18vh; }
+        .page section.portfolio > .works > li:nth-child(4) {
+          margin-left: 5%;
+          margin-right: 5%;
+          height: 18vh; }
+        .page section.portfolio > .works > li:nth-child(5) {
+          height: 36vh;
+          margin-bottom: 6vh; }
 
 .icon {
   width: 1em;

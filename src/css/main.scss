@@ -402,24 +402,61 @@
     padding: 20px 0;
     margin-bottom: 20px;
     margin-top: 95px;
+    display: flex;
+    flex-direction: column;
     > .filters {
       display: flex;
+      margin-top: 20px;
+      margin-bottom: 55px;
+      > ol {
+        display: flex;
+        > li {
+          margin-right: 35px;
+        }
+      }
+      > span {
+        margin-right: 25px;
+      }
     }
     > .works {
       border: 1px solid red;
       display: flex;
+      justify-content: flex-start;
+      align-items: center;
       flex-direction: column;
       flex-wrap: wrap;
+      height: 61vh;
       > li {
         border: 1px solid red;
         width: 30%;
+        &:nth-child(1) {
+          height: 36vh;
+          margin-bottom: 4vh;
+        }
+        &:nth-child(2) {
+          margin-left: 5%;
+          margin-right: 5%;
+          margin-bottom: 3vh;
+          height: 18vh;
+        }
+        &:nth-child(3) {
+          margin-left: 5%;
+          margin-right: 5%;
+          margin-bottom: 3vh;
+          height: 18vh;
+        }
+        &:nth-child(4) {
+          margin-left: 5%;
+          margin-right: 5%;
+          height: 18vh;
+        }
+        &:nth-child(5) {
+          height: 36vh;
+          margin-bottom: 6vh;
+        }
       }
-      &:nth-child(3) {
-        background: red;
-       }
-      &:nth-child(2) {
-        height: 40%;
-      }
+
+
     }
   }
 }

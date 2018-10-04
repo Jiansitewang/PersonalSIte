@@ -299,8 +299,8 @@
   width: 100%;
   flex-direction: column;
   > section {
-    margin-left: 5%;
-    margin-right:5%;
+    margin-left: 7%;
+    margin-right:7%;
     > h2 {
       font-size: 24px;
       text-transform: uppercase;
@@ -398,8 +398,31 @@
       transform: translateX(-100%);
     }
   }
+  section.portfolio{
+    padding: 20px 0;
+    margin-bottom: 20px;
+    margin-top: 95px;
+    > .filters {
+      display: flex;
+    }
+    > .works {
+      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      > li {
+        border: 1px solid red;
+        width: 30%;
+      }
+      &:nth-child(3) {
+        background: red;
+       }
+      &:nth-child(2) {
+        height: 40%;
+      }
+    }
+  }
 }
-
 
 .icon {
   width: 1em; height: 1em;

@@ -258,8 +258,8 @@
   width: 100%;
   flex-direction: column; }
   .page > section {
-    margin-left: 5%;
-    margin-right: 5%; }
+    margin-left: 7%;
+    margin-right: 7%; }
     .page > section > h2 {
       font-size: 24px;
       text-transform: uppercase;
@@ -336,6 +336,24 @@
         transition: all 1s; }
   .page > section.skill .offset .progress {
     transform: translateX(-100%); }
+  .page section.portfolio {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    margin-top: 95px; }
+    .page section.portfolio > .filters {
+      display: flex; }
+    .page section.portfolio > .works {
+      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .page section.portfolio > .works > li {
+        border: 1px solid red;
+        width: 30%; }
+      .page section.portfolio > .works:nth-child(3) {
+        background: red; }
+      .page section.portfolio > .works:nth-child(2) {
+        height: 40%; }
 
 .icon {
   width: 1em;

@@ -411,53 +411,65 @@
       > ol {
         display: flex;
         > li {
+          font-weight: 500;
+          cursor: pointer;
           margin-right: 35px;
+          transition: all 0.3s ease;
+          color: #727272;
         }
       }
       > span {
+        font-weight: 300;
+        color: #727272;
         margin-right: 25px;
       }
     }
     > .works {
-      border: 1px solid red;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      flex-direction: column;
-      flex-wrap: wrap;
-      height: 61vh;
+      border: 1px solid transparent;
+      position: relative;
       > li {
-        border: 1px solid red;
-        width: 30%;
+        width: 18vw;
+        height: 27vw;
+        box-shadow: 0 10px 38px 0 rgba(0,0,0,0.45);
         &:nth-child(1) {
-          height: 36vh;
-          margin-bottom: 4vh;
+          background-image: url("http://pg4xp1tlk.bkt.clouddn.com/PureCss-2.jpg");
+          background-size: cover;
+          position: absolute;
+          left: 0;
+          top: 0;
         }
         &:nth-child(2) {
-          margin-left: 5%;
-          margin-right: 5%;
-          margin-bottom: 3vh;
-          height: 18vh;
+          background-image: url("http://pg4xp1tlk.bkt.clouddn.com/163music.jpeg");
+          background-size: 100% 100%;
+          height: 11vw;
+          position: absolute;
+          left: 20vw;
         }
         &:nth-child(3) {
-          margin-left: 5%;
-          margin-right: 5%;
-          margin-bottom: 3vh;
-          height: 18vh;
+          background-image: url("http://pg4xp1tlk.bkt.clouddn.com/nav-2.jpg");
+          background-size: 100% 100%;
+          height: 11vw;
+          position: absolute;
+          left: 20vw;
+          top: 13vw;
         }
         &:nth-child(4) {
-          margin-left: 5%;
-          margin-right: 5%;
-          height: 18vh;
+          background-image: url("http://pg4xp1tlk.bkt.clouddn.com/PersonalSite-2.jpg");
+          background-size: cover;
+          height: 11vw;
+          position: absolute;
+          left: 20vw;
+          top: 26vw;
         }
         &:nth-child(5) {
-          height: 36vh;
-          margin-bottom: 6vh;
+          background-image: url("http://pg4xp1tlk.bkt.clouddn.com/drawBorad-2.jpg");
+          background-size: cover;
+          position: absolute;
+          left: 40vw;
         }
       }
-
-
     }
+
   }
 }
 

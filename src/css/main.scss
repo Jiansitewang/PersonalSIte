@@ -427,49 +427,378 @@
     > .works {
       border: 1px solid transparent;
       position: relative;
-      > li {
-        width: 18vw;
-        height: 27vw;
-        box-shadow: 0 10px 38px 0 rgba(0,0,0,0.45);
-        &:nth-child(1) {
+      > .work1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        cursor: pointer;
+        &:hover {
+          > .blackBG {
+            background: black;
+            opacity: 0.8;
+          }
+          > .workName{
+            top: 50%;
+            transform: translate(-50%,-50%);
+            opacity: 1;
+            z-index: 2;
+            &:after{
+            }
+          }
+          > .detail{
+            top: 50%;
+            transform: translate(-50%,185%);
+            opacity: 1;
+            z-index: 2;
+          }
+        }
+        > li {
+          width: 18vw;
+          height: 27vw;
+          box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.45);
           background-image: url("http://pg4xp1tlk.bkt.clouddn.com/PureCss-2.jpg");
           background-size: cover;
+        }
+        > .blackBG {
           position: absolute;
           left: 0;
           top: 0;
+          width: 18vw;
+          height: 27vw;
+          z-index: 1;
         }
-        &:nth-child(2) {
+        > .workName{
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-15%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s;
+          &:after{
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: #F1F3F6;
+            left: 0;
+            bottom: -25px;
+            right: 0;
+            margin: auto;
+          }
+        }
+        > .detail {
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          font-size: 12px;
+          transform: translate(-50%,160%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s;
+        }
+      }
+      > .work2 {
+        position: absolute;
+        left: 20vw;
+        &:hover {
+          > .blackBG2 {
+            background: black;
+            opacity: 0.8;
+          }
+          > .workName{
+            top: 50%;
+            transform: translate(-50%,-50%);
+            opacity: 1;
+            z-index: 2;
+            &:after{
+            }
+          }
+          > .detail{
+            top: 50%;
+            transform: translate(-50%,185%);
+            opacity: 1;
+            z-index: 2;
+          }
+        }
+        > li {
+          width: 18vw;
+          height: 11vw;
+          box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.45);
           background-image: url("http://pg4xp1tlk.bkt.clouddn.com/163music.jpeg");
           background-size: 100% 100%;
-          height: 11vw;
-          position: absolute;
-          left: 20vw;
         }
-        &:nth-child(3) {
+        .blackBG2{
+          position: absolute;
+          width: 18vw;
+          height: 11vw;
+          z-index: 1;
+        }
+        > .workName{
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-15%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s;
+          &:after{
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: #F1F3F6;
+            left: 0;
+            bottom: -25px;
+            right: 0;
+            margin: auto;
+          }
+        }
+        > .detail {
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          font-size: 12px;
+          transform: translate(-50%,160%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s;
+        }
+      }
+      > .work3 {
+        position: absolute;
+        left: 20vw;
+        top: 13vw;
+        &:hover {
+          > .blackBG3 {
+            background: black;
+            opacity: 0.8;
+          }
+          > .workName{
+            top: 50%;
+            transform: translate(-50%,-50%);
+            opacity: 1;
+            z-index: 2;
+            &:after{
+            }
+          }
+          > .detail{
+            top: 50%;
+            transform: translate(-50%,185%);
+            opacity: 1;
+            z-index: 2;
+          }
+        }
+        > li {
+          width: 18vw;
+          height: 11vw;
+          box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.45);
           background-image: url("http://pg4xp1tlk.bkt.clouddn.com/nav-2.jpg");
           background-size: 100% 100%;
-          height: 11vw;
-          position: absolute;
-          left: 20vw;
-          top: 13vw;
         }
-        &:nth-child(4) {
+        .blackBG3{
+          position: absolute;
+          width: 18vw;
+          height: 11vw;
+          z-index: 1;
+        }
+        > .workName{
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-15%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s;
+          &:after{
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: #F1F3F6;
+            left: 0;
+            bottom: -25px;
+            right: 0;
+            margin: auto;
+          }
+        }
+        > .detail {
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          font-size: 12px;
+          transform: translate(-50%,160%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s;
+        }
+      }
+      > .work4 {
+        position: absolute;
+        left: 20vw;
+        top: 26vw;
+        &:hover {
+          > .blackBG4 {
+            background: black;
+            opacity: 0.8;
+          }
+          > .workName{
+            top: 50%;
+            transform: translate(-50%,-50%);
+            opacity: 1;
+            z-index: 2;
+            &:after{
+            }
+          }
+          > .detail{
+            top: 50%;
+            transform: translate(-50%,185%);
+            opacity: 1;
+            z-index: 2;
+          }
+        }
+        > li {
+          width: 18vw;
+          height: 11vw;
+          box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.45);
           background-image: url("http://pg4xp1tlk.bkt.clouddn.com/PersonalSite-2.jpg");
           background-size: cover;
-          height: 11vw;
-          position: absolute;
-          left: 20vw;
-          top: 26vw;
         }
-        &:nth-child(5) {
+        .blackBG4{
+          position: absolute;
+          width: 18vw;
+          height: 11vw;
+          z-index: 1;
+        }
+        > .workName{
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-15%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s;
+          &:after{
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: #F1F3F6;
+            left: 0;
+            bottom: -25px;
+            right: 0;
+            margin: auto;
+          }
+        }
+        > .detail {
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          font-size: 12px;
+          transform: translate(-50%,160%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s;
+        }
+      }
+      > .work5 {
+        position: absolute;
+        left: 40vw;
+        &:hover {
+          > .blackBG5 {
+            background: black;
+            opacity: 0.8;
+          }
+          > .workName{
+            top: 50%;
+            transform: translate(-50%,-50%);
+            opacity: 1;
+            z-index: 2;
+            &:after{
+            }
+          }
+          > .detail{
+            top: 50%;
+            transform: translate(-50%,185%);
+            opacity: 1;
+            z-index: 2;
+          }
+        }
+        > li {
+          width: 18vw;
+          height: 27vw;
+          box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.45);
           background-image: url("http://pg4xp1tlk.bkt.clouddn.com/drawBorad-2.jpg");
           background-size: cover;
+        }
+        .blackBG5{
           position: absolute;
-          left: 40vw;
+          width: 18vw;
+          height: 27vw;
+          z-index: 1;
+        }
+        > .workName{
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-15%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s;
+          &:after{
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: #F1F3F6;
+            left: 0;
+            bottom: -25px;
+            right: 0;
+            margin: auto;
+          }
+        }
+        > .detail {
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          font-size: 12px;
+          transform: translate(-50%,160%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s;
         }
       }
     }
-
   }
 }
 

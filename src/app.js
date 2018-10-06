@@ -7,9 +7,9 @@ var app = new Vue({
     conVisible:false,
     helloVisible:true,
     isActive:false,
+    isHover:false
   },
-
-  method:{
+  methods:{
 
   }
 })

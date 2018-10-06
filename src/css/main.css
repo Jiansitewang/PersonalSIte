@@ -361,41 +361,312 @@
     .page section.portfolio > .works {
       border: 1px solid transparent;
       position: relative; }
-      .page section.portfolio > .works > li {
-        width: 18vw;
-        height: 27vw;
-        box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.45); }
-        .page section.portfolio > .works > li:nth-child(1) {
+      .page section.portfolio > .works > .work1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        cursor: pointer; }
+        .page section.portfolio > .works > .work1:hover > .blackBG {
+          background: black;
+          opacity: 0.8; }
+        .page section.portfolio > .works > .work1:hover > .workName {
+          top: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 1;
+          z-index: 2; }
+        .page section.portfolio > .works > .work1:hover > .detail {
+          top: 50%;
+          transform: translate(-50%, 185%);
+          opacity: 1;
+          z-index: 2; }
+        .page section.portfolio > .works > .work1 > li {
+          width: 18vw;
+          height: 27vw;
+          box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.45);
           background-image: url("http://pg4xp1tlk.bkt.clouddn.com/PureCss-2.jpg");
-          background-size: cover;
+          background-size: cover; }
+        .page section.portfolio > .works > .work1 > .blackBG {
           position: absolute;
           left: 0;
-          top: 0; }
-        .page section.portfolio > .works > li:nth-child(2) {
+          top: 0;
+          width: 18vw;
+          height: 27vw;
+          z-index: 1; }
+        .page section.portfolio > .works > .work1 > .workName {
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -15%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s; }
+          .page section.portfolio > .works > .work1 > .workName:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: #F1F3F6;
+            left: 0;
+            bottom: -25px;
+            right: 0;
+            margin: auto; }
+        .page section.portfolio > .works > .work1 > .detail {
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          font-size: 12px;
+          transform: translate(-50%, 160%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s; }
+      .page section.portfolio > .works > .work2 {
+        position: absolute;
+        left: 20vw; }
+        .page section.portfolio > .works > .work2:hover > .blackBG2 {
+          background: black;
+          opacity: 0.8; }
+        .page section.portfolio > .works > .work2:hover > .workName {
+          top: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 1;
+          z-index: 2; }
+        .page section.portfolio > .works > .work2:hover > .detail {
+          top: 50%;
+          transform: translate(-50%, 185%);
+          opacity: 1;
+          z-index: 2; }
+        .page section.portfolio > .works > .work2 > li {
+          width: 18vw;
+          height: 11vw;
+          box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.45);
           background-image: url("http://pg4xp1tlk.bkt.clouddn.com/163music.jpeg");
-          background-size: 100% 100%;
-          height: 11vw;
+          background-size: 100% 100%; }
+        .page section.portfolio > .works > .work2 .blackBG2 {
           position: absolute;
-          left: 20vw; }
-        .page section.portfolio > .works > li:nth-child(3) {
+          width: 18vw;
+          height: 11vw;
+          z-index: 1; }
+        .page section.portfolio > .works > .work2 > .workName {
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -15%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s; }
+          .page section.portfolio > .works > .work2 > .workName:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: #F1F3F6;
+            left: 0;
+            bottom: -25px;
+            right: 0;
+            margin: auto; }
+        .page section.portfolio > .works > .work2 > .detail {
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          font-size: 12px;
+          transform: translate(-50%, 160%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s; }
+      .page section.portfolio > .works > .work3 {
+        position: absolute;
+        left: 20vw;
+        top: 13vw; }
+        .page section.portfolio > .works > .work3:hover > .blackBG3 {
+          background: black;
+          opacity: 0.8; }
+        .page section.portfolio > .works > .work3:hover > .workName {
+          top: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 1;
+          z-index: 2; }
+        .page section.portfolio > .works > .work3:hover > .detail {
+          top: 50%;
+          transform: translate(-50%, 185%);
+          opacity: 1;
+          z-index: 2; }
+        .page section.portfolio > .works > .work3 > li {
+          width: 18vw;
+          height: 11vw;
+          box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.45);
           background-image: url("http://pg4xp1tlk.bkt.clouddn.com/nav-2.jpg");
-          background-size: 100% 100%;
-          height: 11vw;
+          background-size: 100% 100%; }
+        .page section.portfolio > .works > .work3 .blackBG3 {
           position: absolute;
-          left: 20vw;
-          top: 13vw; }
-        .page section.portfolio > .works > li:nth-child(4) {
+          width: 18vw;
+          height: 11vw;
+          z-index: 1; }
+        .page section.portfolio > .works > .work3 > .workName {
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -15%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s; }
+          .page section.portfolio > .works > .work3 > .workName:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: #F1F3F6;
+            left: 0;
+            bottom: -25px;
+            right: 0;
+            margin: auto; }
+        .page section.portfolio > .works > .work3 > .detail {
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          font-size: 12px;
+          transform: translate(-50%, 160%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s; }
+      .page section.portfolio > .works > .work4 {
+        position: absolute;
+        left: 20vw;
+        top: 26vw; }
+        .page section.portfolio > .works > .work4:hover > .blackBG4 {
+          background: black;
+          opacity: 0.8; }
+        .page section.portfolio > .works > .work4:hover > .workName {
+          top: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 1;
+          z-index: 2; }
+        .page section.portfolio > .works > .work4:hover > .detail {
+          top: 50%;
+          transform: translate(-50%, 185%);
+          opacity: 1;
+          z-index: 2; }
+        .page section.portfolio > .works > .work4 > li {
+          width: 18vw;
+          height: 11vw;
+          box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.45);
           background-image: url("http://pg4xp1tlk.bkt.clouddn.com/PersonalSite-2.jpg");
-          background-size: cover;
+          background-size: cover; }
+        .page section.portfolio > .works > .work4 .blackBG4 {
+          position: absolute;
+          width: 18vw;
           height: 11vw;
+          z-index: 1; }
+        .page section.portfolio > .works > .work4 > .workName {
           position: absolute;
-          left: 20vw;
-          top: 26vw; }
-        .page section.portfolio > .works > li:nth-child(5) {
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -15%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s; }
+          .page section.portfolio > .works > .work4 > .workName:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: #F1F3F6;
+            left: 0;
+            bottom: -25px;
+            right: 0;
+            margin: auto; }
+        .page section.portfolio > .works > .work4 > .detail {
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          font-size: 12px;
+          transform: translate(-50%, 160%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s; }
+      .page section.portfolio > .works > .work5 {
+        position: absolute;
+        left: 40vw; }
+        .page section.portfolio > .works > .work5:hover > .blackBG5 {
+          background: black;
+          opacity: 0.8; }
+        .page section.portfolio > .works > .work5:hover > .workName {
+          top: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 1;
+          z-index: 2; }
+        .page section.portfolio > .works > .work5:hover > .detail {
+          top: 50%;
+          transform: translate(-50%, 185%);
+          opacity: 1;
+          z-index: 2; }
+        .page section.portfolio > .works > .work5 > li {
+          width: 18vw;
+          height: 27vw;
+          box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.45);
           background-image: url("http://pg4xp1tlk.bkt.clouddn.com/drawBorad-2.jpg");
-          background-size: cover;
+          background-size: cover; }
+        .page section.portfolio > .works > .work5 .blackBG5 {
           position: absolute;
-          left: 40vw; }
+          width: 18vw;
+          height: 27vw;
+          z-index: 1; }
+        .page section.portfolio > .works > .work5 > .workName {
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -15%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s; }
+          .page section.portfolio > .works > .work5 > .workName:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: #F1F3F6;
+            left: 0;
+            bottom: -25px;
+            right: 0;
+            margin: auto; }
+        .page section.portfolio > .works > .work5 > .detail {
+          position: absolute;
+          color: #fff;
+          left: 50%;
+          top: 50%;
+          font-size: 12px;
+          transform: translate(-50%, 160%);
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: -2;
+          opacity: 0;
+          transition: all .7s; }
 
 .icon {
   width: 1em;
